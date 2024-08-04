@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  overflow: hidden; /* Hide scrollbars */
   /*background-color: black;*/
 }
 
@@ -48,5 +49,30 @@ body {
     color: white;
     padding: 10px;
     min-height: 100vh; /* Ensure the main element covers the full viewport height */
+  }
+
+  .cont {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    width: 50vw;
+  }
+  
+  .grid-item {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    height: 30vh;
   }
 }

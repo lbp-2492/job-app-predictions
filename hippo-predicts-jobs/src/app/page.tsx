@@ -6,6 +6,15 @@ export default function Home() {
       <div>
         <h1 className="">HIPPO'S PREDICTION</h1>
       </div>
+
+      <div className="cont">
+        <div className="grid-container">
+          <div className="grid-item">1</div>
+          <div className="grid-item">2</div>
+          <div className="grid-item">3</div>  
+          <div className="grid-item">4</div>
+        </div>
+      </div>
     </main>
   );
 }
