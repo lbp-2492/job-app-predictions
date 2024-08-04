@@ -6,8 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /*background-color: black;*/
 }
 
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,7 +17,10 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*/
 
+
+/*
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -25,9 +30,23 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+    */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components {
+  .landing-page-bg {
+    /*background-color: black !important;*/
+    background-image: url('/runaway_black_hole_desktop.png');
+    background-size: cover; /* Resize the background image to cover the element */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white;
+    padding: 10px;
+    min-height: 100vh; /* Ensure the main element covers the full viewport height */
   }
 }
