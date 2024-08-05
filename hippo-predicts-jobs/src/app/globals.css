@@ -9,6 +9,10 @@
   overflow: hidden; /* Hide scrollbars */
 }
 
+body {
+  font-family: 'Changa', sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -16,14 +20,8 @@
 }
 
 @layer components {
-  .input-page-bg {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 214, 219, 220;
-    --background-end-rgb: 255, 255, 255;
-  }
-
+  /* LANDING PAGE */ 
   .landing-page-bg {
-    /*background-color: black !important;*/
     background-image: url('/runaway_black_hole_desktop.png');
     background-size: cover; /* Resize the background image to cover the element */
     background-position: center; /* Center the background image */
@@ -67,4 +65,6 @@
   .link-wrapper:hover .grid-item {
     background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
   }
+
+  /* */ 
 }
