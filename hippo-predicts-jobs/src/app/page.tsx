@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -9,18 +9,18 @@ export default function Home() {
 
       <div className="cont">
         <div className="grid-container">
-          <a href="https://example.com" className="link-wrapper">
+          <Link className="link-wrapper" href="">
             <div className="grid-item">analytics</div>
-          </a>
-          <a href="https://example.com" className="link-wrapper">
+          </Link>
+          <Link className="link-wrapper" href="/input">
             <div className="grid-item">input</div>
-          </a>
-          <a href="https://example.com" className="link-wrapper">
+          </Link>
+          <Link className="link-wrapper" href="">
             <div className="grid-item">raw data</div>
-          </a>
-          <a href="https://example.com" className="link-wrapper">
+          </Link>
+          <Link className="link-wrapper" href="/predict">
             <div className="grid-item">predict</div>
-          </a>
+          </Link>
         </div>
       </div>
     </main>
