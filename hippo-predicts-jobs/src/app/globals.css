@@ -6,7 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  overflow: hidden; /* Hide scrollbars */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 body {
@@ -22,6 +22,21 @@ body {
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: white;
     min-height: 100vh; /* Ensure the main element covers the full viewport height */
+  }
+
+  .input-page-bg {
+    background-color: black;
+    min-height: 100vh;
+    color: white;
+  }
+
+  .form-bg {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding-bottom: 40px;
   }
 
   .heading {
@@ -63,5 +78,52 @@ body {
     background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
   }
 
-  /* */ 
+  /* */
+  
+  input {
+    background-color: black;
+    border: 2px solid white;
+    color: white; /* This sets the text color to white for better visibility */
+    padding: 8px 12px; /* Adjust padding as needed */
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  /* Optional: Style for when the input is focused */
+  input:focus {
+    border-color: #ffffff; /* This keeps the border white when focused */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2); /* Optional: adds a subtle glow effect */
+  }
+
+  select {
+    background-color: black;
+    border: 2px solid white;
+    color: white; /* This sets the text color to white for better visibility */
+    padding: 8px 12px; /* Adjust padding as needed */
+    outline: none; /* Removes the default focus outline */
+  }
+  
+  /* Optional: Style for when the input is focused */
+  select:focus {
+    border-color: #ffffff; /* This keeps the border white when focused */
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2); /* Optional: adds a subtle glow effect */
+  }
+
+  .spacing {
+    padding-bottom: 20px;
+  }
+
+  .button-spacing {
+    padding: 10px;
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+
+  .button-spacing:hover {
+    background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
+  }
+
+  .radio-spacing {
+    margin-right: 20px;
+  }
+  
 }

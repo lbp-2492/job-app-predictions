@@ -17,22 +17,27 @@ export default function Input() {
   return (
     <main className="input-page-bg">
       <div>
-        <h1>HIPPO TAKES YOUR INPUT</h1>
+        <h1 className="heading">HIPPO TAKES YOUR INPUT</h1>
       </div>
-      <div>
+      <div className="form-bg">
         <form action="/api/submit" method="post">
-          <label>
-            Job Title:
+          <div className="spacing">
+            <label> Job Title </label>
+            <br />
             <input type="text" name="name" required />
-          </label>
-          <br />
-          <label>
-            Location:
+            <br />
+          </div>
+    
+          <div className="spacing">
+            <label> Location </label>
+            <br />
             <input type="text" name="location" required />
-          </label>
-          <br />
-          <label>
-            Company Ranking:
+            <br />
+          </div>
+
+          <div className="spacing">
+            <label> Company Ranking </label>
+            <br />
             <select name="option" value={CRselectedOption} onChange={CRhandleChange} required>
               <option value="" disabled>Select a ranking</option>
               <option value="option1">Fortune 500 type shi</option>
@@ -40,30 +45,38 @@ export default function Input() {
               <option value="option3">Mid tier type shi (places that aren't tech based)</option>
               <option value="option3">Easy shi</option>
             </select>
-          </label>
-          <br />
-          <label>
-            Simplify Rating for Resume:
+            <br />
+          </div>
+
+          <div className="spacing">
+            <label> Simplify Rating for Resume </label>          
+            <br />
             <input type="number" name="rating" required />
-          </label>
-          <br />
-          <label>
-            Submitted Cover Letter?
+            <br />
+          </div>
+
+          <div className="spacing">
+            <label> Submitted Cover Letter? </label>
+            <br />
             <label className="">
-              <input type="radio" name="response" value="yes" required></input>
-              <span className="">Yes</span>
-              <input type="radio" name="response" value="no" required></input>
-              <span className="">No</span>
+              <input className="" type="radio" name="response" value="yes" required></input>
+              <span className="radio-spacing">Yes</span>
+              <input className="" type="radio" name="response" value="no" required></input>
+              <span className="radio-spacing">No</span>
             </label>
-          </label>
-          <br />
-          <label>
-            Salary Range?
+            <br />
+          </div>
+
+          <div className="spacing">
+            <label> Salary Range? </label> 
+            <br />
             <input type="number" name="range" required />
-          </label>
-          <br />
-          <label>
-            Status?
+            <br />
+          </div>
+
+          <div className="spacing">
+            <label> Status? </label>
+            <br />
             <select name="option" value={SselectedOption} onChange={ShandleChange} required>
               <option value="" disabled>Select a ranking</option>
               <option value="option1">Accepted</option>
@@ -72,11 +85,11 @@ export default function Input() {
               <option value="option4">Ghosted (more than a month)</option>
               <option value="option4">Response</option>
             </select>
-          </label>
-          <br />
-          <button type="submit">Add to data</button>
-          <button type="submit">Predict</button>
+            <br />
+          </div>
 
+          <button className="button-spacing" type="submit">ADD TO DATA</button>
+          <button className="button-spacing" type="submit">PREDICT</button>
         </form>
       </div>
     </main>
