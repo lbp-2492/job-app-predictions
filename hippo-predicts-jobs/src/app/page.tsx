@@ -9,10 +9,18 @@ export default function Home() {
 
       <div className="cont">
         <div className="grid-container">
-          <div className="grid-item">1</div>
-          <div className="grid-item">2</div>
-          <div className="grid-item">3</div>  
-          <div className="grid-item">4</div>
+          <a href="https://example.com" className="link-wrapper">
+            <div className="grid-item">analytics</div>
+          </a>
+          <a href="https://example.com" className="link-wrapper">
+            <div className="grid-item">input</div>
+          </a>
+          <a href="https://example.com" className="link-wrapper">
+            <div className="grid-item">raw data</div>
+          </a>
+          <a href="https://example.com" className="link-wrapper">
+            <div className="grid-item">predict</div>
+          </a>
         </div>
       </div>
     </main>

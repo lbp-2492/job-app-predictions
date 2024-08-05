@@ -68,11 +68,21 @@ body {
   
   .grid-item {
     border: 1px solid rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 75px;
     margin: 20px;
     font-size: 30px;
     text-align: center;
     justify-content: center;
     height: 30vh;
+    transition: background-color 0.3s ease;
+  }
+
+  .link-wrapper {
+    display: block;
+    text-decoration: none; /* Remove underline from the link */
+  }
+
+  .link-wrapper:hover .grid-item {
+    background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
   }
 }
