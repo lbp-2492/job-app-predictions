@@ -13,13 +13,10 @@ export default function Home() {
             <div className="grid-item">analytics</div>
           </Link>
           <Link className="link-wrapper" href="/input">
-            <div className="grid-item">input</div>
+            <div className="grid-item">data input</div>
           </Link>
           <Link className="link-wrapper" href="">
             <div className="grid-item">raw data</div>
-          </Link>
-          <Link className="link-wrapper" href="/predict">
-            <div className="grid-item">predict</div>
           </Link>
         </div>
       </div>

@@ -74,7 +74,9 @@ export default function Input() {
             </select>
           </label>
           <br />
-          <button type="submit">Submit</button>
+          <button type="submit">Add to data</button>
+          <button type="submit">Predict</button>
+
         </form>
       </div>
     </main>
