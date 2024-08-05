@@ -13,12 +13,6 @@ body {
   font-family: 'Changa', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer components {
   /* LANDING PAGE */ 
   .landing-page-bg {
@@ -27,16 +21,18 @@ body {
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the image from repeating */
     color: white;
-    padding: 10px;
     min-height: 100vh; /* Ensure the main element covers the full viewport height */
+  }
+
+  .heading {
+    font-size: 40px;
+    padding: 20px;
   }
 
   .cont {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
   
   .grid-container {
@@ -48,6 +44,7 @@ body {
   
   .grid-item {
     border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
     padding: 75px;
     margin: 20px;
     font-size: 30px;
