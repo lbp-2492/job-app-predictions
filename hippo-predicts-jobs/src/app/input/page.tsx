@@ -2,10 +2,16 @@
 import { useState } from 'react';
 
 export default function Input() {
-  const [selectedOption, setSelectedOption] = useState<string>('');
+  const [CRselectedOption, CRsetSelectedOption] = useState<string>('');
 
-  const handleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedOption(event.target.value);
+  const CRhandleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    CRsetSelectedOption(event.target.value);
+  };
+
+  const [SselectedOption, SsetSelectedOption] = useState<string>('');
+
+  const ShandleChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    SsetSelectedOption(event.target.value);
   };
 
   return (
@@ -22,39 +28,50 @@ export default function Input() {
           <br />
           <label>
             Location:
-            <input type="email" name="email" required />
+            <input type="text" name="location" required />
           </label>
           <br />
           <label>
             Company Ranking:
-            <input type="email" name="email" required />
-            Select an option:
-            <select name="option" value={selectedOption} onChange={handleChange} required>
-            <option value="" disabled>Select an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
+            <select name="option" value={CRselectedOption} onChange={CRhandleChange} required>
+              <option value="" disabled>Select a ranking</option>
+              <option value="option1">Fortune 500 type shi</option>
+              <option value="option2">Startup</option>
+              <option value="option3">Mid tier type shi (places that aren't tech based)</option>
+              <option value="option3">Easy shi</option>
+            </select>
           </label>
           <br />
           <label>
             Simplify Rating for Resume:
-            <input type="email" name="email" required />
+            <input type="number" name="rating" required />
           </label>
           <br />
           <label>
             Submitted Cover Letter?
-            <input type="email" name="email" required />
+            <label className="">
+              <input type="radio" name="response" value="yes" required></input>
+              <span className="">Yes</span>
+              <input type="radio" name="response" value="no" required></input>
+              <span className="">No</span>
+            </label>
           </label>
           <br />
           <label>
             Salary Range?
-            <input type="email" name="email" required />
+            <input type="number" name="range" required />
           </label>
           <br />
           <label>
             Status?
-            <input type="email" name="email" required />
+            <select name="option" value={SselectedOption} onChange={ShandleChange} required>
+              <option value="" disabled>Select a ranking</option>
+              <option value="option1">Accepted</option>
+              <option value="option2">Rejected</option>
+              <option value="option3">Call Back</option>
+              <option value="option4">Ghosted (more than a month)</option>
+              <option value="option4">Response</option>
+            </select>
           </label>
           <br />
           <button type="submit">Submit</button>

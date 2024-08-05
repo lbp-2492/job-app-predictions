@@ -6,3 +6,12 @@
 
 things i've learned - 
 1. media outdos 
+
+links - 
+1. https://react.dev/learn/start-a-new-react-project
+2. https://www.w3schools.com/css/css_grid.asp
+3. https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_grid
+4. https://www.freecodecamp.org/news/how-to-center-a-div-with-css/
+5. https://www.w3schools.com/css/css_align.asp
+6. https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
+7. 
