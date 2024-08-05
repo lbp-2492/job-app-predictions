@@ -14,4 +14,6 @@ links -
 4. https://www.freecodecamp.org/news/how-to-center-a-div-with-css/
 5. https://www.w3schools.com/css/css_align.asp
 6. https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
-7. 
+7. https://fonts.google.com/selection/embed
+8. https://tailwindcss.com/docs/font-size
+9. https://www.w3schools.com/css/css3_borders.asp
