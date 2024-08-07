@@ -125,5 +125,27 @@ body {
   .radio-spacing {
     margin-right: 20px;
   }
+
+  .cont-input {
+    width: 100vw;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .grid-container-input {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 70vw;
+    margin-bottom: 5px;
+    position: relative;
+    top: -100px;
+  }
+  
+  .grid-item-input {
+    text-align: center;
+    justify-content: center;
+    height: 15vh;
+  }
   
 }
