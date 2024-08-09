@@ -22,6 +22,15 @@ links -
 12. https://stackoverflow.com/questions/15918251/how-to-move-div-vertically-down-using-css
 13. https://www.w3schools.com/css/css_form.asp
 14. https://github.com/AnastasiiaPirus/source-code-for-blogs/tree/main/next-navigation-bar/app
+15. https://medium.com/@a.pirus/how-to-create-a-responsive-navigation-bar-in-next-js-13-e5540789a017
+16. https://github.com/AnastasiiaPirus/source-code-for-blogs/tree/main/next-navigation-bar/app
+17. https://tailwindcss.com/docs/border-width
+18. https://tailwindcss.com/docs/text-color
+19. https://tw-elements.com/docs/standard/extended/vertically-align-text/#:~:text=To%20vertically%20align%20text%2C%20you,the%20center%20of%20its%20container.
+20. https://tailwindcss.com/docs/text-align
+21. https://tailwindcss.com/docs/font-size
+22. https://tailwindcss.com/docs/display
+23. https://tailwindcss.com/docs/flex
 
 # Important routing notes - 
 ## How does routing work in the latest v of Next.js?
