@@ -17,3 +17,8 @@ links -
 7. https://fonts.google.com/selection/embed
 8. https://tailwindcss.com/docs/font-size
 9. https://www.w3schools.com/css/css3_borders.asp
+10. https://www.w3schools.com/css/css_grid.asp
+11. https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_display_grid
+12. https://stackoverflow.com/questions/15918251/how-to-move-div-vertically-down-using-css
+13. https://www.w3schools.com/css/css_form.asp
+14. 

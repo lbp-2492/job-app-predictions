@@ -27,28 +27,22 @@ export default function Input() {
 
               <div className="grid-item-input">
                 <div className="spacing">
-                  <label> Job Title </label>
-                  <br />
-                  <input type="text" name="name" required />
+                  <input type="text" name="name" placeholder="Job Title" required />
                   <br />
                 </div>
               </div>
 
               <div className="grid-item-input">
                 <div className="spacing">
-                  <label> Location </label>
-                  <br />
-                  <input type="text" name="location" required />
+                  <input type="text" name="location" placeholder="Location" required />
                   <br />
                 </div>
               </div>
 
               <div className="grid-item-input">
                 <div className="spacing">
-                  <label> Company Ranking </label>
-                  <br />
                   <select className="h-11" name="option" value={CRselectedOption} onChange={CRhandleChange} required>
-                    <option className="" value="" disabled>Select a ranking</option>
+                    <option className="" value="" disabled>Company Ranking</option>
                     <option value="option1">Fortune 500 type shi</option>
                     <option value="option2">Startup</option>
                     <option value="option3">Mid tier type shi (places that aren't tech based)</option>
@@ -60,9 +54,7 @@ export default function Input() {
 
               <div className="grid-item-input">
                 <div className="spacing">
-                  <label> Simplify Rating for Resume </label>          
-                  <br />
-                  <input type="number" name="rating" required />
+                  <input type="number" name="rating" placeholder="Simplify Rating" required />
                   <br />
                 </div>
               </div>
@@ -70,9 +62,7 @@ export default function Input() {
               <div className="grid-item-input">
                 <div className="spacing">
                   <div className="spacing">
-                    <label> Salary Range? </label> 
-                    <br />
-                    <input type="number" name="range" required />
+                    <input type="number" name="range" placeholder="Salary Range?" required />
                     <br />
                   </div>
                 </div>
@@ -80,10 +70,8 @@ export default function Input() {
 
               <div className="grid-item-input">
                 <div className="spacing">
-                  <label> Status? </label>
-                  <br />
                   <select className="h-11 w-96" name="option" value={SselectedOption} onChange={ShandleChange} required>
-                    <option value="" disabled>Select a ranking</option>
+                    <option value="" disabled>Status?</option>
                     <option value="option1">Accepted</option>
                     <option value="option2">Rejected</option>
                     <option value="option3">Call Back</option>
@@ -95,23 +83,22 @@ export default function Input() {
               </div>
 
               <div className="grid-item-input">
-                <div className="spacing">
-                  <label> Submitted Cover Letter? </label>
-                  <br />
-                  <label className="">
-                  <input className="" type="radio" name="response" value="yes" required></input>
-                  <span className="radio-spacing">Yes</span>
-                  <input className="" type="radio" name="response" value="no" required></input>
-                  <span className="radio-spacing">No</span>
-                  </label>
+                <div className="spacing-radio">
+                  <label className="label-top"> Submitted Cover Letter? </label>
+                  <div className="radio-buttons">
+                    <input className="" type="radio" name="response" value="yes" required></input>
+                    <span className="radio-spacing">Yes</span>
+                    <input className="" type="radio" name="response" value="no" required></input>
+                    <span className="radio-spacing">No</span>
+                  </div>
                   <br />
                 </div>
               </div>
 
             </div>
+            <button className="button-spacing" type="submit">ADD TO DATA</button>
+            <button className="button-spacing" type="submit">PREDICT</button>
           </div>
-          <button className="button-spacing" type="submit">ADD TO DATA</button>
-          <button className="button-spacing" type="submit">PREDICT</button>
         </form>
       </div>
     </main>

@@ -35,8 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding-bottom: 40px;
+    height: 80vh;
   }
 
   .heading {
@@ -112,6 +111,11 @@ body {
     padding-bottom: 20px;
   }
 
+  .spacing-radio {
+    text-align: center;
+    justify-content: center;
+  }
+
   .button-spacing {
     padding: 10px;
     border: 2px solid white;
@@ -120,10 +124,6 @@ body {
 
   .button-spacing:hover {
     background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
-  }
-
-  .radio-spacing {
-    margin-right: 20px;
   }
 
   .cont-input {
@@ -145,7 +145,21 @@ body {
   .grid-item-input {
     text-align: center;
     justify-content: center;
-    height: 15vh;
+    height: 13vh;
   }
   
+  .label-top {
+    display: block;
+    margin-bottom: 10px; /* Adjust as needed for spacing */
+  }
+  
+  .radio-buttons {
+    display: flex;
+    gap: 10px; /* Adjust the gap between radio buttons */
+    justify-content: center;
+  }
+  
+  .radio-spacing {
+    margin-right: 10px; /* Adjust as needed for spacing */
+  }
 }
