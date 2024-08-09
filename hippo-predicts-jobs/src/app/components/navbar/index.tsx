@@ -1,13 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./logo";
-import Button from "./button";
+import Buttons from "./buttons";
 
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-20 bg-emerald-800 sticky top-0">
-        <div className="container mx-auto px-4 h-full">
+      <div className="w-full h-20 flex bg-black text-neutral-50 sticky top-0">
+        <Logo />
+        <Buttons />
+      </div>
+    </>
+  );
+};
+
+export default Navbar;
+
+/*
+<div className="container bg-slate-200 mx-auto px-4 h-full">
           <div className="flex justify-between items-center h-full">
             <Logo />
             
@@ -33,9 +43,4 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
-    </>
-  );
-};
-
-export default Navbar;
+*/
