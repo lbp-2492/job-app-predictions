@@ -14,6 +14,7 @@ body {
 }
 
 @layer components {
+  /* landing page */ 
     .landing-page-bg {
       background-image: url('/runaway_black_hole_desktop.png');
       background-size: cover; /* Resize the background image to cover the element */
@@ -61,4 +62,14 @@ body {
       background-color: rgba(92, 92, 92, 0.5); /* Change background color on hover */
     }
   
+    /* input */
+
+    .input-page-bg {
+      background-color: black;
+      width: 100vw;
+      height: 90vh;
+      color: white;
+    }
+
+
 }
