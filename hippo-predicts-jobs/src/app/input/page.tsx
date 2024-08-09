@@ -2,8 +2,10 @@
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Dropdown from "../components/forms/dropdown";
+import Radio from "../components/forms/radio";
+import Input from "../components/forms/input";
 
-export default function Input() {
+export default function InputForm() {
     /* Company Type */
     const [selectedOptionCompanyType, setSelectedOptionCompanyType] = useState("");
 
@@ -76,6 +78,28 @@ export default function Input() {
 
     const clearanceTypeLabel = "Clearance"; 
 
+    /* Status */
+    
+    const [selectedOptionStatusType, setSelectedOptionStatusType] = useState("");
+
+    const handleStatusChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+        setSelectedOptionStatusType(event.target.value);
+    };
+
+    const optionsStatusType = [
+        "Sent",
+        "Accepted",
+        "Rejected",
+        "Response Back",
+        "Ghosted"
+    ];
+
+    const statusTypeLabel = "Application status?"; 
+
+    /* radios */
+    const radioMajorLabel = "Do you have a SCI major?";
+    const radioCoverLetterLabel = "Did you submit a cover letter?";
+
     return (
         <>
             <main className="input-page-bg">
@@ -106,7 +130,28 @@ export default function Input() {
                         selectedOption={selectedOptionClearanceType} 
                         label={clearanceTypeLabel}
                         handleChange={handleClearanceChange} 
-                    />                 
+                    /> 
+
+                    <Dropdown 
+                        options={optionsStatusType} 
+                        selectedOption={selectedOptionStatusType} 
+                        label={statusTypeLabel}
+                        handleChange={handleStatusChange} 
+                    /> 
+
+                    <Radio
+                        label={radioMajorLabel}
+                    />   
+
+                    <Radio
+                        label={radioCoverLetterLabel}
+                    />    
+
+                    <Input
+                        type="text"
+                        label="Simplify Rating"
+                    />
+
                 </div>
             </main>
         </>
