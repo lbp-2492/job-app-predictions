@@ -9,7 +9,7 @@ const DropdownComp: React.FC<DropdownCompProps> = ({ options, selectedOption, la
     return (
       <div className="">
         <select 
-            className="h-11 bg-slate-900 rounded-lg text-white p-2 w-1/5" 
+            className="h-11 bg-slate-900 rounded-lg text-white w-[300px]" 
             name="option" 
             value={selectedOption} 
             onChange={handleChange} 

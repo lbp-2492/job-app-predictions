@@ -103,71 +103,57 @@ export default function InputForm() {
     return (
         <>
             <main className="input-page-bg">
-                <div>
-                    <Dropdown 
-                        options={optionsCompanyType} 
-                        selectedOption={selectedOptionCompanyType} 
-                        label={companyTypeLabel}
-                        handleChange={handleCompanyChange} 
-                    /> 
+                <form className="flex flex-col items-center h-[100vh] w-[100vw] bg-orange-400">
+                    <div className="grid grid-cols-[auto_auto_auto] w-[70vw] h-[30vh] p-2 bg-pink-500">
+                        <Dropdown 
+                            options={optionsCompanyType} 
+                            selectedOption={selectedOptionCompanyType} 
+                            label={companyTypeLabel}
+                            handleChange={handleCompanyChange} 
+                        /> 
 
-                    <Dropdown 
-                        options={optionsJobType} 
-                        selectedOption={selectedOptionJobType} 
-                        label={jobTypeLabel}
-                        handleChange={handleJobChange} 
-                    /> 
+                        <Dropdown 
+                            options={optionsJobType} 
+                            selectedOption={selectedOptionJobType} 
+                            label={jobTypeLabel}
+                            handleChange={handleJobChange} 
+                        /> 
 
-                    <Dropdown 
-                        options={optionsEduType} 
-                        selectedOption={selectedOptionEduType} 
-                        label={eduTypeLabel}
-                        handleChange={handleEduChange} 
-                    />   
+                        <Dropdown 
+                            options={optionsEduType} 
+                            selectedOption={selectedOptionEduType} 
+                            label={eduTypeLabel}
+                            handleChange={handleEduChange} 
+                        />   
 
-                    <Dropdown 
-                        options={optionsClearanceType} 
-                        selectedOption={selectedOptionClearanceType} 
-                        label={clearanceTypeLabel}
-                        handleChange={handleClearanceChange} 
-                    /> 
+                        <Dropdown 
+                            options={optionsClearanceType} 
+                            selectedOption={selectedOptionClearanceType} 
+                            label={clearanceTypeLabel}
+                            handleChange={handleClearanceChange} 
+                        /> 
 
-                    <Dropdown 
-                        options={optionsStatusType} 
-                        selectedOption={selectedOptionStatusType} 
-                        label={statusTypeLabel}
-                        handleChange={handleStatusChange} 
-                    /> 
+                        <Dropdown 
+                            options={optionsStatusType} 
+                            selectedOption={selectedOptionStatusType} 
+                            label={statusTypeLabel}
+                            handleChange={handleStatusChange} 
+                        /> 
+                    </div> 
 
-                    <Radio
-                        label={radioMajorLabel}
-                    />   
+                    <div className="grid grid-cols-[auto_auto] w-[70vw] h-[5vh] p-2 bg-green-400">
+                        <Radio
+                            label={radioMajorLabel}
+                        />   
 
-                    <Radio
-                        label={radioCoverLetterLabel}
-                    />    
-
-                    <Input
-                        type="number"
-                        label="Input minimum salary:"
-                    />
-
-                    <Input
-                        type="number"
-                        label="Input maximum salary:"
-                    />
-
-                    <Input
-                        type="number"
-                        label="Simplify numerator:"
-                    />
-
-                    <Input
-                        type="number"
-                        label="Simplify denominator:"
-                    />
-
-                </div>
+                        <Radio
+                            label={radioCoverLetterLabel}
+                        />    
+                    </div>   
+    
+                </form>
+                
+                
             </main>
         </>
     );
