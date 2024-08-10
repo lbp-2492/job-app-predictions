@@ -148,8 +148,23 @@ export default function InputForm() {
                     />    
 
                     <Input
-                        type="text"
-                        label="Simplify Rating"
+                        type="number"
+                        label="Input minimum salary:"
+                    />
+
+                    <Input
+                        type="number"
+                        label="Input maximum salary:"
+                    />
+
+                    <Input
+                        type="number"
+                        label="Simplify numerator:"
+                    />
+
+                    <Input
+                        type="number"
+                        label="Simplify denominator:"
                     />
 
                 </div>

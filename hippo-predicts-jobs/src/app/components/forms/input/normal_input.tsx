@@ -5,10 +5,7 @@ type InputCompProps = {
 
 const InputComp: React.FC<InputCompProps> = ({ type, label }) => {
     return (
-        <InputComp 
-            type={type} 
-            label={label}
-        />
+        <input className="h-11 bg-slate-900 rounded-lg text-white p-2 w-1/5" type={type} placeholder={label} required />
     );
   };
   
